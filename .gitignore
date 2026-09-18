@@ -1,0 +1,42 @@
+# ==========================================
+# Arduino & Embedded Monorepo .gitignore
+# ==========================================
+
+# Folder dependensi library Arduino IDE lokal (terlalu besar & standar)
+libraries/
+
+# Sketch sementara / auto-generated sketches (hanya di root direktori)
+/sketch_sep*
+/sketch_*
+
+# File kompilasi & binary Arduino
+*.hex
+*.bin
+*.elf
+*.eep
+*.o
+*.d
+*.a
+
+# Folder build & cache
+build/
+output/
+.cache/
+
+# Kredensial & Secrets (jika dipisahkan ke file config lokal)
+**/secrets.h
+**/config.h
+*.env
+
+# File OS & Sinkronisasi Cloud
+Thumbs.db
+desktop.ini
+.DS_Store
+*.sync
+*.part
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*~
